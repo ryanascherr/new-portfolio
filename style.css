@@ -40,6 +40,16 @@ header {
     color: white;
 }
 
+.blocks {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    max-width: 80px;
+    position: relative;
+}
+
 h1 {
     margin: 2%;
     /* animation: 1.5s ease 0s 1 slideInFromLeft; */
@@ -62,16 +72,24 @@ main {
     margin: 25px 0;
 }
 
-.slide-from-left {
+/* .slide-from-left {
     animation: 1.5s ease 0s 1 slideInFromLeft;
 }
 
 .slide-from-right {
     animation: 1.5s ease 0s 1 slideInFromRight;
-}
+} */
 
 .slide-from-bottom {
-    animation: 1.5s ease 0s 1 slideInFromBottom;
+    animation: slideInFromBottom .5s ease-out 1s 1;
+}
+
+.bounce {
+    animation: bounce .75s linear 1.5s 1;
+}
+
+.jump {
+    animation: jump 1s linear 1s 1;
 }
 
 .container h3 {
@@ -88,6 +106,15 @@ main {
     width: 40%;
     /* border: 2px solid purple; */
     margin: 15px;
+}
+
+.mario-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mario-box {
+    max-width: 80px;
 }
 
 img {
@@ -140,6 +167,33 @@ img {
     100% {
         transform: translateY(0);
         opacity: 100%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -30px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(+100%);
+        opacity: 0%;
+    }
+    50% {
+        transform: translateY(-5%);
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(+100%);
+        opacity: 0%;
     }
 }
 
