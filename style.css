@@ -169,13 +169,13 @@ body.loaded .slide-from-bottom {
 
 @keyframes slideInFromBottom {
     from {
-        /* transform: translateY(100%); */
-        top: 45px;
+        transform: translateY(100%);
+        /* top: 45px; */
         opacity: 0;
     }
     to {
-        /* transform: translateY(0); */
-        top: 0px;
+        transform: translateY(0);
+        /* top: 0px; */
         opacity: 1;
     }
 }
