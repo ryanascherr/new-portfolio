@@ -55,12 +55,10 @@ header {
 
 h1 {
     margin: 2%;
-    /* animation: 1.5s ease 0s 1 slideInFromLeft; */
 }
 
 h2 {
     margin: 2%;
-    /* animation: 1.5s ease 0s 1 slideInFromRight; */
 }
 
 main {
@@ -74,14 +72,6 @@ main {
 .container {
     margin: 25px 0;
 }
-
-/* .slide-from-left {
-    animation: 1.5s ease 0s 1 slideInFromLeft;
-}
-
-.slide-from-right {
-    animation: 1.5s ease 0s 1 slideInFromRight;
-} */
 
 .container h3 {
     text-align: center;
@@ -195,41 +185,6 @@ img {
     border-bottom: 2px solid #008CBA;
 }
 
-/* button {
-    position: relative;
-    animation: 4s ease 0s 1 moveAndShake;
-    color: blue;
-} */
-
-/* @keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0%;
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0%;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 100%;
-    }
-} */
-
-/* @keyframes moveAndShake {
-    0% {color: blue; top: 0; left: 0;}
-    25% {color: green; top: 0; left: 200px}
-    50% {color: red; top: 200px; left: 200px}
-    75% {color: yellow; top: 200px; left: 0;}
-    100% {color: purple; top: 0; left: 0;}
-} */
-
 .flip-box {
     background-color: transparent;
     /* width: 300px;
@@ -287,7 +242,6 @@ img {
 
 .text {
     text-align: center;
-    /* white-space: nowrap;  */
     color: white;
     font-size: 20px;
     position: absolute;
