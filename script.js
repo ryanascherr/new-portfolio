@@ -1,5 +1,5 @@
-// function onLoad() {
-//     $("h1").css("opacity", "100");
-// }
+let delayInMilliseconds = 1500;
 
-// onLoad();
+setTimeout(function() {
+    $(".slide-from-bottom").removeClass("transparent");
+}, delayInMilliseconds);
