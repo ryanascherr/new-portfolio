@@ -511,6 +511,33 @@ body.loaded .slide-from-bottom {
     color: var(--dark-blue);
 }
 
+.top-of-phone {
+    background-color: #17202A;
+    /* opacity: .9; */
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.phone-pic-box {
+    max-width: 50px;
+}
+
+.phone-pic {
+    border-radius: 50%;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media only screen and (min-width: 768px) {
     .list-of-projects {
         display: flex;
@@ -529,6 +556,10 @@ body.loaded .slide-from-bottom {
     .texting {
         width: 50%;
         margin: 0 auto;
-        border-radius: 10px;
+    }
+
+    .top-of-phone {
+        width: 50%;
+        margin: 0 auto;
     }
   }
