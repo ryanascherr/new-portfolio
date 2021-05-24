@@ -212,6 +212,55 @@ body.loaded .slide-from-bottom {
     position: relative;
 }
 
+.bob1 {
+    animation-name: bob;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.bob2 {
+    animation-name: bob;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.bob3 {
+    animation-name: bob;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.bob4 {
+    animation-name: bob;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .45s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes bob {
+    from {
+        top: -2.5px;
+    }
+    to {
+        top: 2.5px;
+    }
+}
+
 @keyframes up {
     from {
         top: -2.5px;
@@ -356,91 +405,6 @@ body.loaded .slide-from-bottom {
 }
 
 /* Projects */
-
-/* .projects-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.project {
-    margin: 10px 0;
-} */
-
-.footer {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    border-left: 2px solid var(--blue);
-    border-right: 2px solid var(--blue);
-    border-bottom: 2px solid var(--blue);
-}
-
-.flip-box {
-    background-color: transparent;
-    perspective: 1000px;
-  }
-
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flip-box-back {
-    background-color: var(--blue);
-    color: black;
-    transform: rotateY(180deg);
-}
-
-.box {
-    position: relative;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--blue);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .25s ease-out;
-}
-
-.box:hover .overlay {
-    height: 100%;
-  }
-
-.text {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
 
 .fade-in {
     color: black;
