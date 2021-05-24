@@ -282,6 +282,7 @@ body.loaded .slide-from-bottom {
     color: white;
     background-color: #273746;
     padding: 10px 25px;
+    border-radius: 0 0 10px 10px;
 }
 
 .texting div {
@@ -525,6 +526,7 @@ body.loaded .slide-from-bottom {
 
 .phone-pic {
     border-radius: 50%;
+    max-width: 50px;
 }
 
 .person {
