@@ -44,7 +44,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 0 5%;
 }
 
@@ -52,7 +52,7 @@ header {
     text-align: center;
     background-color: var(--blue);
     color: white;
-    padding: 50px 1%;
+    padding: 50px 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -245,10 +245,11 @@ body.loaded .slide-from-bottom {
 }
 
 #about-me {
-    color: white;
+    /* color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+    padding-top: 100px;
 }
 
 .speech-bubble {
@@ -270,6 +271,85 @@ body.loaded .slide-from-bottom {
 	border-top: 0;
 	margin-left: -10px;
 	margin-top: -20px;
+}
+
+/* Text Bubble */
+
+.texting {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    color: white;
+}
+
+.texting div {
+    margin: 5px 0;
+    /* max-width: 80%; */
+}
+
+.text-box-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-box-left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text-box-right div {
+    max-width: 80%;
+}
+
+.text-box-left div {
+    max-width: 80%;
+}
+
+.text-bubble-left {
+    position: relative;
+	background: #566573;
+	border-radius: .4em;
+    padding: 10px;
+    /* margin: 5px 20% 5px 0; */
+}
+
+.text-bubble-left:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 80%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #566573;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+
+.text-bubble-right {
+	position: relative;
+	background: var(--blue);
+	border-radius: .4em;
+    padding: 10px;
+    max-width: 80%;
+    /* margin: 5px 0 5px 20%; */
+}
+
+.text-bubble-right:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 80%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: var(--blue);
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-right: -20px;
 }
 
 /* Projects */
