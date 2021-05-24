@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+    <link rel="icon" 
+      type="image/png" 
+      href="./img/closeup.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -38,12 +54,15 @@
         </div>
     </header>
     <main>
-        <div id="about-me" class="container">
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quos repellendus recusandae. Laudantium et facilis, quos, ratione molestiae recusandae cupiditate voluptas quam doloribus quaerat doloremque tempore neque accusamus autem corrupti!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo at neque nostrum, voluptates maiores saepe a voluptatibus, adipisci eius nisi tempore quis ullam sint tenetur minima velit nam officia cum.</p>
+        <div class="about-me">
+            <div class="headshot-box">
+                <img src="./img/closeup.png" alt="" class="headshot">
+            </div>
+            <div id="about-me" class="container speech-bubble">
+                <p>Hi! My name is <span class="name up">Ryan</span> <span class="name down">Scherr</span>.</p> <p>I am a web developer who specializes in front-end development and draws upon almost a decade of work as a leader and team player in the field Applied behavior Analysis.</p>
+                <p>My passion and expertise are in creating web pages with responsive design and intuitive UI, with a focus on mobile-first design and development. I look forward to finding creative solutions to give users the best possible experience on any project I am a part of.</p>
+            </div>
         </div>
-        <!-- <button>Click Me!</button> -->
         <div id="my-work" class="container">
             <h3>Projects</h3>
             <div class="projects-list">
@@ -57,9 +76,9 @@
                             <a href="#">Repo</a>
                         </div>
                     </div>
-                    <div class="footer">
+                    <!-- <div class="footer">
                         <p>Name of Project</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="box project">
                     <img src="./img/password-generator.png" alt="" class="image">
