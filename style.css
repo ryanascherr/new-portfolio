@@ -45,7 +45,7 @@ main {
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    margin: 0 5%;
+    /* margin: 0 5%; */
 }
 
 header {
@@ -249,7 +249,7 @@ body.loaded .slide-from-bottom {
     display: flex;
     flex-direction: column;
     justify-content: center; */
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .speech-bubble {
@@ -280,6 +280,8 @@ body.loaded .slide-from-bottom {
     flex-direction: column;
     /* align-items: flex-start; */
     color: white;
+    background-color: #273746;
+    padding: 10px 25px;
 }
 
 .texting div {
@@ -438,3 +440,14 @@ body.loaded .slide-from-bottom {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+.fade-in {
+    color: black;
+}
+
+.fade {
+    /* margin: 50px;
+    padding: 50px;
+    background-color: lightgreen; */
+    opacity: 1;
+  }
