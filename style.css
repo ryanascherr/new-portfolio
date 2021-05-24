@@ -450,4 +450,8 @@ body.loaded .slide-from-bottom {
     padding: 50px;
     background-color: lightgreen; */
     opacity: 1;
-  }
+}
+
+.italicize {
+    text-transform: uppercase;
+}
