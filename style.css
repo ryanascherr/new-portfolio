@@ -61,29 +61,18 @@ header {
 
 /* Nav */
 
-.nav ul {
+.nav {
     display: flex;
     justify-content: center;
 }
 
-.nav li {
+.nav a {
     list-style-type: none;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 10PX;
-}
-
-.nav li:hover {
-    background-color: white;
-}
-
-.nav li:hover a {
-    color: #3498DB;
-}
-
-.nav a {
     text-decoration: none;
-    color: white;
+    color: var(--blue);
 }
 
 /* Animation */
@@ -504,6 +493,89 @@ body.loaded .slide-from-bottom {
     justify-content: space-between;
 }
 
+#contact-info {
+    background-color: var(--blue);
+    padding: 100px 0;
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-info h2 {
+    margin-bottom: 100px;
+}
+
+.contact-links a {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.link {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    /* border-top: 2px solid red;
+    border-right: 2px solid green;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid orange;
+    animation-name: color;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+}
+
+.link:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+/* @keyframes color {
+    0%, 100% {border-top: 2px solid red;
+        border-right: 2px solid green;
+        border-bottom: 2px solid blue;
+        border-left: 2px solid orange;
+    }
+    25% {
+        border-top: 2px solid orange;
+        border-right: 2px solid red;
+        border-bottom: 2px solid green;
+        border-left: 2px solid blue;
+    }
+    50% {
+        border-top: 2px solid blue;
+        border-right: 2px solid orange;
+        border-bottom: 2px solid red;
+        border-left: 2px solid green;
+    }
+    75% {
+        border-top: 2px solid green;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid orange;
+        border-left: 2px solid red;
+    }
+} */
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: -45px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .list-of-projects {
         display: flex;
@@ -528,4 +600,9 @@ body.loaded .slide-from-bottom {
         width: 50%;
         margin: 0 auto;
     }
-  }
+}
+
+@media only screen and (min-width: 992px) {
+
+
+}
