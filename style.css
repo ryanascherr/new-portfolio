@@ -321,6 +321,8 @@ body.loaded .slide-from-bottom {
     background-color: #273746;
     padding: 10px 25px;
     border-radius: 0 0 10px 10px;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .texting div {
@@ -471,6 +473,8 @@ body.loaded .slide-from-bottom {
     color: white;
     padding: 10px;
     border-radius: 10px 10px 0 0;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .phone-pic-box {
@@ -524,48 +528,12 @@ body.loaded .slide-from-bottom {
     margin: 10px;
     background-color: white;
     border-radius: 10px;
-    /* border-top: 2px solid red;
-    border-right: 2px solid green;
-    border-bottom: 2px solid blue;
-    border-left: 2px solid orange;
-    animation-name: color;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-    animation-direction: normal; */
 }
 
 .link:hover {
     background-color: var(--dark-blue);
     color: white;
 }
-
-/* @keyframes color {
-    0%, 100% {border-top: 2px solid red;
-        border-right: 2px solid green;
-        border-bottom: 2px solid blue;
-        border-left: 2px solid orange;
-    }
-    25% {
-        border-top: 2px solid orange;
-        border-right: 2px solid red;
-        border-bottom: 2px solid green;
-        border-left: 2px solid blue;
-    }
-    50% {
-        border-top: 2px solid blue;
-        border-right: 2px solid orange;
-        border-bottom: 2px solid red;
-        border-left: 2px solid green;
-    }
-    75% {
-        border-top: 2px solid green;
-        border-right: 2px solid blue;
-        border-bottom: 2px solid orange;
-        border-left: 2px solid red;
-    }
-} */
 
 @keyframes bounce {
     0%, 100% {
