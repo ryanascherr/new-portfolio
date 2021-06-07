@@ -59,6 +59,30 @@ header {
     align-items: center;
 }
 
+.mode {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.large {
+    font-size: 3rem;
+}
+
+.large:hover {
+    cursor: pointer;
+}
+
+.light-mode {
+    background-color: white;
+    color: #212529;
+}
+
+.dark-mode {
+    background-color: #202124;
+    color: white;
+}
+
 /* Nav */
 
 .nav {
@@ -434,6 +458,10 @@ body.loaded .slide-from-bottom {
     box-shadow: 5px 5px 5px gray;
 }
 
+.dark-mode-shadow {
+    box-shadow: none;
+}
+
 .project img {
     border-radius: 10px 10px 0 0;
 }
@@ -556,7 +584,6 @@ body.loaded .slide-from-bottom {
         max-width: 45%;
         margin: 10px 0;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px gray;
     }
 
     .texting {

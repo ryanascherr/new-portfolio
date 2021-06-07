@@ -26,3 +26,24 @@ $(window).on("load",function() {
   });
 
   $("#time").html(moment().format('h:mm'));
+
+let isLightMode = true;
+
+$(".material-icons").click(function() {
+    if (isLightMode) {
+        $(".material-icons").html("brightness_2");
+        isLightMode = false;
+        $("body").removeClass("light-mode");
+        $("body").addClass("dark-mode");
+        $(".project").addClass("dark-mode-shadow");
+        return;
+    } 
+    if (isLightMode == false) {
+        $(".material-icons").html("wb_sunny");
+        isLightMode = true;
+        $("body").removeClass("dark-mode");
+        $("body").addClass("light-mode");
+        $(".project").removeClass("dark-mode-shadow");
+        return;
+    }
+})
