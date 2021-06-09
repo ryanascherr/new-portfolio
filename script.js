@@ -29,9 +29,9 @@ $(window).on("load",function() {
 
 let isLightMode = true;
 
-$(".material-icons").click(function() {
+$(".icon").click(function() {
     if (isLightMode) {
-        $(".material-icons").html("brightness_2");
+        $(".icon").html("brightness_2");
         isLightMode = false;
         $("body").removeClass("light-mode");
         $("body").addClass("dark-mode");
@@ -39,7 +39,7 @@ $(".material-icons").click(function() {
         return;
     } 
     if (isLightMode == false) {
-        $(".material-icons").html("wb_sunny");
+        $(".icon").html("wb_sunny");
         isLightMode = true;
         $("body").removeClass("dark-mode");
         $("body").addClass("light-mode");
@@ -47,3 +47,31 @@ $(".material-icons").click(function() {
         return;
     }
 })
+
+$(".project-one").click(function(){
+  $(".one").slideToggle('fast');
+  $(".two").slideUp('fast');
+  $(".three").slideUp('fast');
+  $(".four").slideUp('fast');
+});
+
+$(".project-two").click(function(){
+  $(".two").slideToggle('fast');
+  $(".one").slideUp('fast');
+  $(".three").slideUp('fast');
+  $(".four").slideUp('fast');
+});
+
+$(".project-three").click(function(){
+  $(".three").slideToggle('fast');
+  $(".one").slideUp('fast');
+  $(".two").slideUp('fast');
+  $(".four").slideUp('fast');
+});
+
+$(".project-four").click(function(){
+  $(".four").slideToggle('fast');
+  $(".one").slideUp('fast');
+  $(".two").slideUp('fast');
+  $(".three").slideUp('fast');
+});

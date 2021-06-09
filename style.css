@@ -12,6 +12,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
+    margin: 0;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h2 {
 }
 
 p {
-    margin: 10px 0;
+    margin: 10px;
     font-size: larger;
 }
 
@@ -435,10 +436,6 @@ body.loaded .slide-from-bottom {
     /* display: none; */
 }
 
-.italicize {
-    text-transform: uppercase;
-}
-
 #my-work {
     padding: 100px 0 15px 0;
     display: flex;
@@ -455,8 +452,12 @@ body.loaded .slide-from-bottom {
 .project {
     max-width: 90%;
     margin: 10px 0;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 5px 5px 5px gray;
+}
+
+.project:hover {
+    cursor: pointer;
 }
 
 .dark-mode-shadow {
@@ -464,6 +465,13 @@ body.loaded .slide-from-bottom {
 }
 
 .project img {
+    /* border-radius: 0 0 10px 10px; */
+}
+
+.project-name {
+    padding: 10px;
+    background-color: var(--dark-blue);
+    color: white;
     border-radius: 10px 10px 0 0;
 }
 
@@ -562,6 +570,18 @@ body.loaded .slide-from-bottom {
 .link:hover {
     background-color: var(--dark-blue);
     color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 @keyframes bounce {

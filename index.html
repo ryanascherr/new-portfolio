@@ -23,12 +23,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="light-mode">
     <div class="mode">
-        <i class="large material-icons">wb_sunny</i>
+        <i class="large material-icons icon">wb_sunny</i>
     </div>
     <header>
         <h1 class="slide-from-bottom transparent">Ryan Scherr</h1>
@@ -117,11 +116,6 @@
                     <p>In that program, I learned a variety of languages, technologies, and frameworks, like JavaScript, Node.js, APIs, and MySQL, just to name a few.</p>
                 </div>
             </div>
-            <!-- <div class="text-box-left fade">
-                <div class="text-bubble-left">
-                    <p>I also had the opportunity to co-develop several large applications where all of those technologies were combined.</p>
-                </div>
-            </div> -->
             <div class="text-box-right fade">
                 <div class="text-bubble-right">
                     <p>What sets you apart from other web developers?</p>
@@ -132,11 +126,6 @@
                     <p>My near-decade of work as a leader and team player in the field of Applied Behavior Analysis gives me a unique edge as I transition to this field.</p>
                 </div>
             </div>
-            <!-- <div class="text-box-left fade">
-                <div class="text-bubble-left">
-                    <p>I've supervised dozens of individuals and have collaborated with many multidisciplinary teams.<p>
-                </div>
-            </div> -->
             <div class="text-box-right fade">
                 <div class="text-bubble-right">
                     <p>Wow you're so <span class="bob1">c</span><span class="bob2">o</span><span class="bob3">o</span><span class="bob4">l</span></p>
@@ -165,44 +154,64 @@
             </select> -->
         </div>
         <div class="list-of-projects">
-            <div class="project">
-                <img src="./img/yoda.png" alt="">
-                <div class="image-label">
+            <div class="project project-one">
+                <div class="project-name">
                     <h3>Yoda Translator</h3>
-                    <p>HTML / CSS / JS</p>
+                </div>
+                <img src="./img/yoda.png" alt="">
+                <div class="image-label hidden one">
+                    <h4>Description:</h4>
+                    <p class="">This application allows a user to generate a random piece of advice or make their own, then have it translated by the Jedi Master Yoda.</p>
+                    <h4>Technologies Used:</h4>
+                    <p class="">HTML, CSS, JS, JQuery, MaterializeCSS, Fun Translations API, Advice Slip JSON API</p>
                     <div class="buttons">
                         <button class="button"><a href="https://github.com/caitbopp/yoda-advice" target="_blank">Repo</a></button>
                         <button class="button"><a href="https://caitbopp.github.io/yoda-advice/" target="_blank">Web Page</a></button>
                     </div>
                 </div>
             </div>
-            <div class="project">
+            <div class="project project-two">
+                <div class="project-name">
+                    <h3>Weather Finder</h3>
+                </div>
                 <img src="./img/weather.png" alt="">
-                <div class="image-label">
-                    <h3>Weather Dashboard</h3>
-                    <p>HTLM / CSS / JS</p>
+                <div class="image-label hidden two">
+                    <h4>Description:</h4>
+                    <p class="">This application allows a user to find weather information for any city across the world, as well as a 5-day forecast.</p>
+                    <h4>Technologies Used:</h4>
+                    <p class="">HTML, CSS, JS, JQuery, MaterializeCSS, Fun Translations API, Advice Slip JSON API</p>
                     <div class="buttons">
                         <button class="button"><a href="https://github.com/ryanascherr/weather-dashboard" target="_blank">Repo</a></button>
                         <button class="button"><a href="https://ryanascherr.github.io/weather-dashboard/" target="_blank">Web Page</a></button>
                     </div>
                 </div>
             </div>
-           <div class="project">
-                <img src="./img/horiseon.png" alt="">
-                <div class="image-label">
+           <div class="project project-three">
+                <div class="project-name">
                     <h3>Horiseon</h3>
-                    <p>HTML / CSS</p>
+                </div>
+                <img src="./img/horiseon.png" alt="">
+                <div class="image-label hidden three">
+                    <h4>Description:</h4>
+                    <p class="">This application allows a user to generate a random piece of advice or make their own, then have it translated by the Jedi Master Yoda.</p>
+                    <h4>Technologies Used:</h4>
+                    <p class="">HTML, CSS, JS, JQuery, MaterializeCSS, Fun Translations API, Advice Slip JSON API</p>
                     <div class="buttons">
                         <button class="button"><a href="https://github.com/ryanascherr/horiseon" target="_blank">Repo</a></button>
                         <button class="button"><a href="https://ryanascherr.github.io/horiseon/" target="_blank">Web Page</a></button>
                     </div>
                 </div>
            </div>
-            <div class="project">
-                <img src="./img/password-generator.png" alt="">
-                <div class="image-label">
+            <div class="project project-four">
+                <div class="project-name">
                     <h3>Password Generator</h3>
-                    <p>HTLM / CSS / JS</p>
+                </div>
+                <img src="./img/password-generator.png" alt="">
+                <div class="image-label hidden four">
+                    <h4>Description:</h4>
+                    <p class="">This application allows a user to generate a random piece of advice or make their own, then have it translated by the Jedi Master Yoda.</p>
+                    <h4>Technologies Used:</h4>
+                    <p class="">HTML, CSS, JS, JQuery, MaterializeCSS, Fun Translations API, Advice Slip JSON API</p>
                     <div class="buttons">
                         <button class="button"><a href="https://github.com/ryanascherr/password-generator" target="_blank">Repo</a></button>
                         <button class="button"><a href="https://ryanascherr.github.io/password-generator/" target="_blank">Web Page</a></button>
@@ -220,7 +229,6 @@
         </div>
     </main>
 
-    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./script.js"></script>
