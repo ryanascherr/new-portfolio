@@ -558,7 +558,8 @@ body.loaded .slide-from-bottom {
 
 .phone-pic {
     border-radius: 50%;
-    max-width: 50px;
+    max-width: 100%;
+    width: 100px;
 }
 
 .person {
