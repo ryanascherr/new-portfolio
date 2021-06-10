@@ -629,6 +629,14 @@ body.loaded .slide-from-bottom {
     border: none;
 }
 
+textarea:focus, input:focus, button:focus {
+    outline: none;
+}
+
+.text-bubble-right p {
+    text-align: end;
+}
+
 @keyframes bounce {
     0%, 100% {
         top: 0;
