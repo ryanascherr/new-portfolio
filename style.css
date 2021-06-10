@@ -71,6 +71,10 @@ header {
     font-size: 3rem;
 }
 
+.medium {
+    font-size: 2rem;
+}
+
 .large:hover {
     cursor: pointer;
 }
@@ -342,18 +346,15 @@ body.loaded .slide-from-bottom {
 .texting {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     color: white;
     background-color: #273746;
     padding: 10px 25px;
-    border-radius: 0 0 10px 10px;
     width: 95%;
     margin: 0 auto;
 }
 
 .texting div {
     margin: 5px 0;
-    /* max-width: 80%; */
 }
 
 .text-box-right {
@@ -498,20 +499,60 @@ body.loaded .slide-from-bottom {
     border: none;
     border-radius: 10px;
     background-color: white;
+    width: 45%;
+    font-size: x-large;
 }
 
 .button a {
     color: var(--dark-blue);
+    display: block;
 }
 
 .top-of-phone {
     background-color: #17202A;
-    /* opacity: .9; */
     color: white;
     padding: 10px;
     border-radius: 10px 10px 0 0;
     width: 95%;
     margin: 0 auto;
+}
+
+.bottom-of-phone {
+    background-color: #17202A;
+    width: 95%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.bottom-icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-box {
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 30px;
+    padding: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-box p {
+    margin: 0;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+
+.icon-gray {
+    color: gray;
 }
 
 .phone-pic-box {
@@ -612,7 +653,7 @@ body.loaded .slide-from-bottom {
         margin: 0 auto;
     }
 
-    .top-of-phone {
+    .top-of-phone, .bottom-of-phone {
         width: 50%;
         margin: 0 auto;
     }
