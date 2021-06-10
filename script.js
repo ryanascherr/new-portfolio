@@ -17,9 +17,9 @@ $(window).on("load",function() {
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom < windowBottom - 50) { //object comes into view (scrolling down)
           if ($(this).css("opacity")==0) {$(this).fadeTo(50,1);}
-        } else { //object goes out of view (scrolling up)
-          if ($(this).css("opacity")==1) {
-              $(this).fadeTo(50,0);}
+        // } else { //object goes out of view (scrolling up)
+        //   if ($(this).css("opacity")==1) {
+        //       $(this).fadeTo(50,0);}
         }
       });
     }).scroll(); //invoke scroll-handler on page-load
@@ -75,3 +75,19 @@ $(".project-four").click(function(){
   $(".two").slideUp();
   $(".three").slideUp();
 });
+
+$(".text-button").click(function() {
+  if ($(".text-box").val() == "") {
+    return;
+  }
+
+  let text = $(".text-box").val().trim();
+  $(".text-box").val("");
+  let paragraph = $("<p></p>").text(text);
+  let innerDiv = $("<div></div>").addClass("text-bubble-right");
+  let outerDiv = $("<div></div>").addClass("text-box-right");
+
+  innerDiv.append(paragraph);
+  outerDiv.append(innerDiv);
+  $(".texting").append(outerDiv);
+})

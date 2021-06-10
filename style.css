@@ -525,12 +525,13 @@ body.loaded .slide-from-bottom {
 
 .text-box {
     border: 1px solid gray;
-    color: gray;
+    color: white;
     border-radius: 30px;
     padding: 10px;
     width: 75%;
     display: flex;
     justify-content: space-between;
+    background-color: #17202A;
 }
 
 .text-box p {
@@ -615,6 +616,17 @@ body.loaded .slide-from-bottom {
 
 .bold {
     font-weight: bold;
+}
+
+.text-button {
+    background-color: #17202A;
+    color: gray;
+    border: none;
+    border-radius: 10px;
+}
+
+.text-button:active {
+    border: none;
 }
 
 @keyframes bounce {
