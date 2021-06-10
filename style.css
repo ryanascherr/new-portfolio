@@ -311,7 +311,7 @@ body.loaded .slide-from-bottom {
 }
 
 #about-me {
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 .speech-bubble {
@@ -426,7 +426,7 @@ body.loaded .slide-from-bottom {
 }
 
 #my-work {
-    padding: 100px 0 15px 0;
+    padding: 75px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -596,6 +596,8 @@ body.loaded .slide-from-bottom {
     margin: 10px;
     background-color: white;
     border-radius: 10px;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
 }
 
 .link:hover {
