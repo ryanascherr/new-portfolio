@@ -16,10 +16,10 @@ $(window).on("load",function() {
         
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom < windowBottom - 50) { //object comes into view (scrolling down)
-          if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
+          if ($(this).css("opacity")==0) {$(this).fadeTo(50,1);}
         } else { //object goes out of view (scrolling up)
           if ($(this).css("opacity")==1) {
-              $(this).fadeTo(200,0);}
+              $(this).fadeTo(50,0);}
         }
       });
     }).scroll(); //invoke scroll-handler on page-load
@@ -49,29 +49,29 @@ $(".icon").click(function() {
 })
 
 $(".project-one").click(function(){
-  $(".one").slideToggle('fast');
-  $(".two").slideUp('fast');
-  $(".three").slideUp('fast');
-  $(".four").slideUp('fast');
+  $(".one").slideToggle();
+  $(".two").slideUp();
+  $(".three").slideUp();
+  $(".four").slideUp();
 });
 
 $(".project-two").click(function(){
-  $(".two").slideToggle('fast');
-  $(".one").slideUp('fast');
-  $(".three").slideUp('fast');
-  $(".four").slideUp('fast');
+  $(".two").slideToggle();
+  $(".one").slideUp();
+  $(".three").slideUp();
+  $(".four").slideUp();
 });
 
 $(".project-three").click(function(){
-  $(".three").slideToggle('fast');
-  $(".one").slideUp('fast');
-  $(".two").slideUp('fast');
-  $(".four").slideUp('fast');
+  $(".three").slideToggle();
+  $(".one").slideUp();
+  $(".two").slideUp();
+  $(".four").slideUp();
 });
 
 $(".project-four").click(function(){
-  $(".four").slideToggle('fast');
-  $(".one").slideUp('fast');
-  $(".two").slideUp('fast');
-  $(".three").slideUp('fast');
+  $(".four").slideToggle();
+  $(".one").slideUp();
+  $(".two").slideUp();
+  $(".three").slideUp();
 });
