@@ -452,7 +452,7 @@ body.loaded .slide-from-bottom {
 .project {
     max-width: 90%;
     margin: 10px 0;
-    /* border-radius: 10px; */
+    border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
 }
 
@@ -601,11 +601,11 @@ body.loaded .slide-from-bottom {
         flex-wrap: wrap;
     }
 
-    .project {
+    /* .project {
         max-width: 45%;
         margin: 10px 0;
         border-radius: 10px;
-    }
+    } */
 
     .texting {
         width: 50%;
@@ -619,6 +619,12 @@ body.loaded .slide-from-bottom {
 }
 
 @media only screen and (min-width: 992px) {
+    .project {
+        max-width: 45%;
+        border-radius: 10px;
+    }
 
-
+    .image-label {
+        /* border-radius: 0 0 10px 10px; */
+    }
 }
