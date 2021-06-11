@@ -432,6 +432,10 @@ body.loaded .slide-from-bottom {
     align-items: center;
 }
 
+#my-work p {
+    text-align: center;
+}
+
 .list-of-projects {
     display: flex;
     flex-direction: column;
@@ -631,10 +635,6 @@ body.loaded .slide-from-bottom {
 
 textarea:focus, input:focus, button:focus {
     outline: none;
-}
-
-.text-bubble-right p {
-    text-align: end;
 }
 
 @keyframes bounce {
