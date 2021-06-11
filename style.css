@@ -572,7 +572,7 @@ body.loaded .slide-from-bottom {
 
 #contact-info {
     background-color: var(--dark-blue);
-    padding: 100px 0;
+    padding: 75px 0;
     margin-top: 100px;
     color: white;
     display: flex;
@@ -581,7 +581,7 @@ body.loaded .slide-from-bottom {
 }
 
 #contact-info h2 {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .contact-links a {
