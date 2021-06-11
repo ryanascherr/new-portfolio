@@ -23,5 +23,3 @@ https://ryanascherr.github.io/portfolio/
 ## Contact Information
 
 ryanascherr@gmail.com
-https://github.com/ryanascherr
-https://www.linkedin.com/in/ryanascherr/
