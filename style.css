@@ -87,6 +87,22 @@ header {
     color: white;
 }
 
+.contact-icons-container {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.contact-icon {
+    max-width: 50px;
+    margin: 0 10px;
+}
+
+.contact-icon img {
+    width: 100%;
+}
+
 /* Nav */
 
 .nav {
