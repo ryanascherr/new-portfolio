@@ -103,6 +103,9 @@ header {
     width: 100%;
 }
 
+.contact-icon img:hover {
+    transform: scale(1.1);
+}
 /* Nav */
 
 .nav {
