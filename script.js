@@ -17,9 +17,6 @@ $(window).on("load",function() {
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom < windowBottom - 50) { //object comes into view (scrolling down)
           if ($(this).css("opacity")==0) {$(this).fadeTo(50,1);}
-        // } else { //object goes out of view (scrolling up)
-        //   if ($(this).css("opacity")==1) {
-        //       $(this).fadeTo(50,0);}
         }
       });
     }).scroll(); //invoke scroll-handler on page-load
@@ -53,6 +50,8 @@ $(".project-one").click(function(){
   $(".two").slideUp();
   $(".three").slideUp();
   $(".four").slideUp();
+  $(".five").slideUp();
+  $(".six").slideUp();
 });
 
 $(".project-two").click(function(){
@@ -60,6 +59,8 @@ $(".project-two").click(function(){
   $(".one").slideUp();
   $(".three").slideUp();
   $(".four").slideUp();
+  $(".five").slideUp();
+  $(".six").slideUp();
 });
 
 $(".project-three").click(function(){
@@ -67,6 +68,8 @@ $(".project-three").click(function(){
   $(".one").slideUp();
   $(".two").slideUp();
   $(".four").slideUp();
+  $(".five").slideUp();
+  $(".six").slideUp();
 });
 
 $(".project-four").click(function(){
@@ -74,6 +77,26 @@ $(".project-four").click(function(){
   $(".one").slideUp();
   $(".two").slideUp();
   $(".three").slideUp();
+  $(".five").slideUp();
+  $(".six").slideUp();
+});
+
+$(".project-five").click(function(){
+  $(".five").slideToggle();
+  $(".one").slideUp();
+  $(".two").slideUp();
+  $(".three").slideUp();
+  $(".four").slideUp();
+  $(".six").slideUp();
+});
+
+$(".project-six").click(function(){
+  $(".six").slideToggle();
+  $(".one").slideUp();
+  $(".two").slideUp();
+  $(".three").slideUp();
+  $(".four").slideUp();
+  $(".five").slideUp();
 });
 
 $(".text-button").click(function() {
