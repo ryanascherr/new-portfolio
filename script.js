@@ -28,7 +28,7 @@ let isLightMode = true;
 
 $(".icon").click(function() {
     if (isLightMode) {
-        $(".icon").html("brightness_2");
+        $(".icon").html("wb_sunny");
         isLightMode = false;
         $("body").removeClass("light-mode");
         $("body").addClass("dark-mode");
@@ -36,7 +36,7 @@ $(".icon").click(function() {
         return;
     } 
     if (isLightMode == false) {
-        $(".icon").html("wb_sunny");
+        $(".icon").html("brightness_2");
         isLightMode = true;
         $("body").removeClass("dark-mode");
         $("body").addClass("light-mode");
