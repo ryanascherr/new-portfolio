@@ -118,7 +118,7 @@ header {
 
 .nav a {
     list-style-type: none;
-    padding: 10px;
+    margin: 10px;
     margin-bottom: 15px;
     border-radius: 10PX;
     text-decoration: none;
@@ -509,7 +509,7 @@ body.loaded .slide-from-bottom {
 }
 
 .button {
-    padding: 5px;
+    /* padding: 5px; */
     margin: 0 10px;
     border: none;
     border-radius: 10px;
@@ -610,6 +610,7 @@ body.loaded .slide-from-bottom {
     color: var(--dark-blue);
     text-decoration: none;
     font-size: larger;
+    margin: 10px;
 }
 
 .contact-links {
@@ -620,7 +621,6 @@ body.loaded .slide-from-bottom {
 
 .link {
     padding: 10px;
-    margin: 10px;
     background-color: white;
     border-radius: 10px;
     transition: 300ms;
