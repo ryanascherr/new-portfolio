@@ -436,8 +436,6 @@ body.loaded .slide-from-bottom {
 	margin-right: -20px;
 }
 
-/* Projects */
-
 .fade-in {
     color: black;
 }
@@ -445,6 +443,12 @@ body.loaded .slide-from-bottom {
 .fade {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Projects */
+
+.resume-link {
+    padding: 10px;
 }
 
 #my-work {
