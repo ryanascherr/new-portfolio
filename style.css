@@ -51,7 +51,7 @@ header {
     text-align: center;
     background-color: var(--dark-blue);
     color: white;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -333,7 +333,7 @@ body.loaded .slide-from-bottom {
 }
 
 #about-me {
-    padding: 75px 0;
+    padding: 25px 0;
 }
 
 .speech-bubble {
@@ -452,7 +452,7 @@ body.loaded .slide-from-bottom {
 }
 
 #my-work {
-    padding: 75px 0;
+    padding: 25px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -598,8 +598,8 @@ body.loaded .slide-from-bottom {
 
 #contact-info {
     background-color: var(--dark-blue);
-    padding: 75px 0;
-    margin-top: 100px;
+    padding: 25px 0;
+    margin-top: 25px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -607,7 +607,7 @@ body.loaded .slide-from-bottom {
 }
 
 #contact-info h2 {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .contact-links a {
@@ -671,6 +671,28 @@ textarea:focus, input:focus, button:focus {
         top: -45px;
     }
 }
+
+@media only screen and (min-width: 480px) {
+    header {
+        padding: 50px 0;
+    }
+
+    #about-me {
+        padding: 75px 0;
+    }
+
+    #my-work {
+        padding: 75px 0;
+    }
+
+    #contact-info {
+        padding: 75px 0;
+        margin-top: 100px;
+    }
+
+    #contact-info h2 {
+        margin-bottom: 50px;
+    }
 
 @media only screen and (min-width: 768px) {
     .list-of-projects {
