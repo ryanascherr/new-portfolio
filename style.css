@@ -15,10 +15,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-h1 {
-    margin: 20px 0;
-}
-
 h2 {
     margin: 20px 0;
 }
@@ -51,7 +47,7 @@ header {
     text-align: center;
     background-color: var(--dark-blue);
     color: white;
-    padding: 50px 0 0 0;
+    padding-top: 100px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -111,15 +107,19 @@ header {
 }
 /* Nav */
 
+.job {
+    margin: 30px 0 0 0;
+}
+
 .nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .nav a {
     list-style-type: none;
-    margin: 10px;
-    margin-bottom: 15px;
+    margin: 30px 15px 0 15px;
     border-radius: 10PX;
     text-decoration: none;
     color: var(--dark-blue);
@@ -357,7 +357,74 @@ body.loaded .slide-from-bottom {
 	margin-top: -20px;
 }
 
-/* Text Bubble */
+.top-of-phone {
+    background-color: #17202A;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.bottom-of-phone {
+    background-color: #17202A;
+    width: 95%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.bottom-icons {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-box {
+    border: 1px solid gray;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #17202A;
+}
+
+.text-box p {
+    margin: 0;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+
+.icon-gray {
+    color: gray;
+}
+
+.phone-pic-box {
+    max-width: 50px;
+}
+
+.phone-pic {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 100px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-icons {
+    display: flex;
+    justify-content: space-between;
+}
 
 .texting {
     display: flex;
@@ -513,7 +580,6 @@ body.loaded .slide-from-bottom {
 }
 
 .button {
-    /* padding: 5px; */
     margin: 0 10px;
     border: none;
     border-radius: 10px;
@@ -525,75 +591,6 @@ body.loaded .slide-from-bottom {
 .button a {
     color: var(--dark-blue);
     display: block;
-}
-
-.top-of-phone {
-    background-color: #17202A;
-    color: white;
-    padding: 10px;
-    border-radius: 10px 10px 0 0;
-    width: 95%;
-    margin: 0 auto;
-}
-
-.bottom-of-phone {
-    background-color: #17202A;
-    width: 95%;
-    padding: 20px 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 0 0 10px 10px;
-}
-
-.bottom-icons {
-    width: 20%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.text-box {
-    border: 1px solid gray;
-    color: white;
-    border-radius: 30px;
-    padding: 10px;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    background-color: #17202A;
-}
-
-.text-box p {
-    margin: 0;
-    font-size: larger;
-    display: flex;
-    align-items: center;
-}
-
-.icon-gray {
-    color: gray;
-}
-
-.phone-pic-box {
-    max-width: 50px;
-}
-
-.phone-pic {
-    border-radius: 50%;
-    max-width: 100%;
-    width: 100px;
-}
-
-.person {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.time-icons {
-    display: flex;
-    justify-content: space-between;
 }
 
 #contact-info {
@@ -673,9 +670,6 @@ textarea:focus, input:focus, button:focus {
 }
 
 @media only screen and (min-width: 480px) {
-    header {
-        padding: 50px 0;
-    }
 
     #about-me {
         padding: 75px 0;
@@ -693,6 +687,7 @@ textarea:focus, input:focus, button:focus {
     #contact-info h2 {
         margin-bottom: 50px;
     }
+}
 
 @media only screen and (min-width: 768px) {
     .list-of-projects {
