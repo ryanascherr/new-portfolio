@@ -14,11 +14,11 @@ Users can scroll up and down the page to view the listed information. Alternativ
 
 ## Technologies Used
 
-HTML, CSS, JS, Materialize
+HTML, CSS, JS
 
 ## Link
 
-https://ryanascherr.github.io/portfolio/
+www.ryanascherr.dev
 
 ## Contact Information
 
