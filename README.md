@@ -14,7 +14,7 @@ Users can scroll up and down the page to view the listed information. Alternativ
 
 ## Technologies Used
 
-HTML, CSS, JS
+HTML, CSS, JS, jQuery
 
 ## Link
 
