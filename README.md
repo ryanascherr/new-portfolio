@@ -18,7 +18,7 @@ HTML, CSS, JS
 
 ## Link
 
-www.ryanascherr.dev
+ryanascherr.dev
 
 ## Contact Information
 
