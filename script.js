@@ -5,6 +5,7 @@ $(window).on('load', function () {
     setTimeout(function() {
         $(".slide-from-bottom").removeClass("transparent");
     }, delayInMilliseconds);
+    console.log("hey!");
 });
 
 $(window).on("load",function() {
@@ -26,7 +27,7 @@ $(window).on("load",function() {
 
 let isLightMode = true;
 
-$(".icon").click(function() {
+$(".mode").click(function() {
     if (isLightMode) {
         $(".icon").html("wb_sunny");
         isLightMode = false;
