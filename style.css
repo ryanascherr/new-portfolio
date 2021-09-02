@@ -446,6 +446,48 @@ body.loaded .slide-from-bottom-three {
     border-radius: 0 0 10px 10px;
 }
 
+.phone-mario-container img {
+    position: relative;
+    top: -40px;
+    left: 30px;
+    width: 80px;
+    transform: rotate(180deg);
+    transform: scaleY(-1);
+}
+
+.speech-bubble-mario {
+	position: absolute;
+	background: #D70000;
+	border-radius: .4em;
+    top: 10px;
+    left: 130px;
+}
+
+.speech-bubble-mario p {
+	color: white;
+}
+
+.speech-bubble-mario:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #D70000;
+	border-left: 0;
+	margin-left: -10px;
+	margin-top: -20px;
+}
+
+.mario-bubble-container {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
 .bottom-icons {
     width: 20%;
     display: flex;
@@ -777,7 +819,7 @@ textarea:focus, input:focus, button:focus {
         margin: 0 auto;
     }
 
-    .top-of-phone, .bottom-of-phone {
+    .top-of-phone, .bottom-of-phone, .mario-bubble-container {
         width: 50%;
         margin: 0 auto;
     }
