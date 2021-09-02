@@ -1,11 +1,25 @@
-let delayInMilliseconds = 1700;
+let delayInMilliseconds1 = 1700;
+let delayInMilliseconds2 = 2200;
+let delayInMilliseconds3 = 2700;
+let longerDelayInMilliseconds = 1700;
 
 $(window).on('load', function () {
     $("body").addClass("loaded");
     setTimeout(function() {
-        $(".slide-from-bottom").removeClass("transparent");
-    }, delayInMilliseconds);
-    console.log("hey!");
+        $(".slide-from-bottom-one").removeClass("transparent");
+        $(".block-one").addClass("hidden");
+        $(".block-one-empty").removeClass("hidden");
+    }, delayInMilliseconds1);
+    setTimeout(function() {
+      $(".slide-from-bottom-two").removeClass("transparent");
+      $(".block-two").addClass("hidden");
+      $(".block-two-empty").removeClass("hidden");
+  }, delayInMilliseconds2);
+  setTimeout(function() {
+    $(".slide-from-bottom-three").removeClass("transparent");
+    $(".block-three").addClass("hidden");
+    $(".block-three-empty").removeClass("hidden");
+}, delayInMilliseconds3);
 });
 
 $(window).on("load",function() {

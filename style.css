@@ -80,10 +80,6 @@ header {
     font-size: 2rem;
 }
 
-/* .large:hover {
-    cursor: pointer;
-} */
-
 .light-mode {
     background-color: white;
     color: #212529;
@@ -130,7 +126,7 @@ header {
 
 .nav a {
     list-style-type: none;
-    margin: 30px 15px 0 15px;
+    margin: 15px 15px 0 15px;
     border-radius: 10PX;
     text-decoration: none;
     color: var(--dark-blue);
@@ -146,7 +142,9 @@ header {
 
 .block {
     max-width: 80px;
+    min-width: 40px;
     position: relative;
+    /* margin: 0 30px; */
 }
 
 .mario-container {
@@ -154,19 +152,25 @@ header {
     justify-content: center;
 }
 
-.mario-box {
+.mario-container img {
     width: 80px;
+}
+
+.mario-box {
+    max-width: 80px;
+    min-width: 40px;
+    /* margin: 0 30px; */
 }
 
 .transparent {
     opacity: 0;
 }
 
-.jump {
+.jump-first, .jump-second, .jump-third {
     transform: translateY(175%);
 }
 
-body.loaded .jump {
+body.loaded .jump-first {
     animation-name: jump;
     animation-duration: .8s;
     animation-timing-function: linear;
@@ -175,7 +179,25 @@ body.loaded .jump {
     animation-direction: normal;
 }
 
-body.loaded .bounce {
+body.loaded .jump-second {
+    animation-name: jump;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+body.loaded .jump-third {
+    animation-name: jump;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+body.loaded .bounce-one {
     animation-name: bounce;
     animation-duration: .3s;
     animation-timing-function: linear;
@@ -184,11 +206,47 @@ body.loaded .bounce {
     animation-direction: normal;
 }
 
-body.loaded .slide-from-bottom {
+body.loaded .bounce-two {
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-delay: 1.9s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+body.loaded .bounce-three {
+    animation-name: bounce;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-delay: 2.4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+body.loaded .slide-from-bottom-one {
     animation-name: slideInFromBottom;
     animation-duration: .5s;
     animation-timing-function: ease-out;
     animation-delay: 1.4s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+}
+
+body.loaded .slide-from-bottom-two {
+    animation-name: slideInFromBottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.9s;
+    animation-iteration-count: 1;
+    animation-direction: forwards;
+}
+
+body.loaded .slide-from-bottom-three {
+    animation-name: slideInFromBottom;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-delay: 2.4s;
     animation-iteration-count: 1;
     animation-direction: forwards;
 }
