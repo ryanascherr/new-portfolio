@@ -112,6 +112,7 @@ header {
 .contact-icon img:hover {
     transform: scale(1.1);
 }
+
 /* Nav */
 
 .job {
@@ -144,7 +145,6 @@ header {
     max-width: 80px;
     min-width: 40px;
     position: relative;
-    /* margin: 0 30px; */
 }
 
 .mario-container {
@@ -159,7 +159,6 @@ header {
 .mario-box {
     max-width: 80px;
     min-width: 40px;
-    /* margin: 0 30px; */
 }
 
 .transparent {
@@ -705,6 +704,8 @@ body.loaded .slide-from-bottom-three {
     display: block;
 }
 
+/* Contact Info */
+
 #contact-info {
     background-color: var(--dark-blue);
     padding: 25px 0;
@@ -775,6 +776,8 @@ body.loaded .slide-from-bottom-three {
 textarea:focus, input:focus, button:focus {
     outline: none;
 }
+
+/* Media Queries */
 
 @keyframes bounce {
     0%, 100% {

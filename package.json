@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/ryanascherr/new-portfolio/issues"
   },
-  "homepage": "https://github.com/ryanascherr/new-portfolio#readme"
+  "homepage": "https://github.com/ryanascherr/new-portfolio#readme",
+  "dependencies": {
+    "nes.css": "^2.3.0"
+  }
 }

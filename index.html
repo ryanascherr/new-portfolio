@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css"> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -31,9 +32,7 @@
         <i class="large material-icons icon">brightness_2</i>
     </div>
     <header>
-        <!-- <h1 class="slide-from-bottom transparent">Ryan Scherr</h1> -->
         <h1>Ryan Scherr</h1>
-        <!-- <h2 class="slide-from-bottom transparent job">Front-end Web Developer</h2> -->
         <h2>Front-end Web Developer</h2>
         <nav class="nav">
             <a href="#about-me">
@@ -53,18 +52,12 @@
             <div class="block block-one-empty hidden">
                 <img src="./img/empty-block.png" alt="">
             </div>
-            <!-- <div class="block">
-                <img src="./img/block.png" alt="">
-            </div> -->
             <div class="block block-two bounce-two">
                 <img src="./img/block.png" alt="">
             </div>
             <div class="block block-two-empty hidden">
                 <img src="./img/empty-block.png" alt="">
             </div>
-            <!-- <div class="block">
-                <img src="./img/block.png" alt="">
-            </div> -->
             <div class="block block-three bounce-three">
                 <img src="./img/block.png" alt="">
             </div>
@@ -150,11 +143,6 @@
                     <p>I received a full-stack web development certificate through Johns Hopkins Coding Bootcamp. </p>
                 </div>
             </div>
-            <!-- <div class="text-box-left fade">
-                <div class="text-bubble-left">
-                    <p>In that program, I learned a variety of languages, technologies, and frameworks, like JavaScript, Node.js, APIs, and MySQL, just to name a few.</p>
-                </div>
-            </div> -->
             <div class="text-box-right fade">
                 <div class="text-bubble-right">
                     <p>What sets you apart from other web developers?</p>
@@ -200,7 +188,8 @@
         </div>
         <div id="my-work">
             <h2>My Work</h2>
-            <p>Click on a project to learn more, or check out my <a href="./img/resume.pdf" target="_blank" class="resume-link"><span class="bob1">resume</span></a></p>
+            <p>Click on a project to learn more, or check out my <a href="./img/resume.pdf" target="_blank"
+                    class="resume-link"><span class="bob1">resume</span></a></p>
         </div>
         <div class="list-of-projects">
             <div class="project project-one">
@@ -270,7 +259,8 @@
                 <img src="./img/password-generator.png" alt="">
                 <div class="image-label hidden four">
                     <h4>Description:</h4>
-                    <p class="bottom">This application allows users to create a random password using a set of five parameters.</p>
+                    <p class="bottom">This application allows users to create a random password using a set of five
+                        parameters.</p>
                     <h4>Technologies Used:</h4>
                     <p class="bottom">HTML, CSS, JS, JQuery</p>
                     <div class="buttons">
@@ -288,7 +278,9 @@
                 <img src="./img/calendar.png" alt="">
                 <div class="image-label hidden five">
                     <h4>Description:</h4>
-                    <p class="bottom">This application allows users to plan out a workday by logging events into a daily calendar. Users can then save the text written in each time block, causing it to persist even if the page refreshes.</p>
+                    <p class="bottom">This application allows users to plan out a workday by logging events into a daily
+                        calendar. Users can then save the text written in each time block, causing it to persist even if
+                        the page refreshes.</p>
                     <h4>Technologies Used:</h4>
                     <p class="bottom">HTML, CSS, JS, JQuery, Bootstrap</p>
                     <div class="buttons">
@@ -306,20 +298,32 @@
                 <img src="./img/workout.png" alt="">
                 <div class="image-label hidden six">
                     <h4>Description:</h4>
-                    <p class="bottom">This application allows users to add exercisses to a workout plan and to view the combined weight and total duration of the last 7 workouts.</p>
+                    <p class="bottom">This application allows users to add exercisses to a workout plan and to view the
+                        combined weight and total duration of the last 7 workouts.</p>
                     <h4>Technologies Used:</h4>
                     <p class="bottom">MongoDB, Mongoose.js</p>
                     <div class="buttons">
                         <button class="button"><a href="https://github.com/ryanascherr/workout-tracker"
                                 target="_blank">Repo</a></button>
-                        <button class="button"><a href="https://metric-loon-80521.herokuapp.com/"
-                                target="_blank">Web Page</a></button>
+                        <button class="button"><a href="https://metric-loon-80521.herokuapp.com/" target="_blank">Web
+                                Page</a></button>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
+    <footer>
         <div id="contact-info">
             <h2>Get in Touch</h2>
+            <!-- <form action="https://formspree.io/f/{form_id}" method="post">
+                <label for="name">Your Name</label>
+                <input name="name" id="" type="">
+                <label for="email">Your Email</label>
+                <input name="email" id="email" type="email">
+                <label for="message">Message</label>
+                <input name="message" id="" type="">
+                <button type="submit" id="email-submit">Submit</button>
+            </form> -->
             <div class="contact-links">
                 <a href="mailto: ryanascherr@gmail.com" target="_blank">
                     <div class="link">ryanascherr@gmail.com</div>
@@ -332,8 +336,10 @@
                 </a>
             </div>
         </div>
-    </main>
+    </footer>
 
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./script.js"></script>
