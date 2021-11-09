@@ -126,11 +126,7 @@ $(".project-six").click(function () {
   $(".five").slideUp();
 });
 
-$(".text-button").click(function () {
-  if ($(".text-box").val() == "") {
-    return;
-  }
-
+function sendText() {
   let text = $(".text-box").val().trim();
   $(".text-box").val("");
   let paragraph = $("<p></p>").text(text);
@@ -140,23 +136,21 @@ $(".text-button").click(function () {
   innerDiv.append(paragraph);
   outerDiv.append(innerDiv);
   $(".texting").append(outerDiv);
+}
+
+$(".text-button").click(function () {
+  if ($(".text-box").val() == "") {
+    return;
+  }
+  sendText();
 })
 
-const textSubmitButton = document.querySelector(".text-box");
-textSubmitButton.addEventListener("keydown", function (event) {
+$(".text-box").addEventListener("keydown", function (event) {
   if (event.keyCode === 13) {
     if ($(".text-box").val() == "") {
       return;
     }
-    let text = $(".text-box").val().trim();
-    $(".text-box").val("");
-    let paragraph = $("<p></p>").text(text);
-    let innerDiv = $("<div></div>").addClass("text-bubble-right");
-    let outerDiv = $("<div></div>").addClass("text-box-right");
-
-    innerDiv.append(paragraph);
-    outerDiv.append(innerDiv);
-    $(".texting").append(outerDiv);
+    sendText();
   }
 });
 

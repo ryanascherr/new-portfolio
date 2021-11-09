@@ -10,6 +10,14 @@
     line-height: 1.5;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
     margin: 0;
@@ -31,14 +39,6 @@ p {
 img {
     max-width: 100%;
     object-fit: cover;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 main {
